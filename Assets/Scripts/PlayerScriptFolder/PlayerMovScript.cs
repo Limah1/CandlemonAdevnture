@@ -6,8 +6,8 @@ public class PlayerMovScript : MonoBehaviour
 {
     Vector2 movInput;
     float playerSpeed=10f;
-    float jumpSpeed=20f;
-    [SerializeField]   float boosterJump = 55f;
+    [SerializeField]  private float jumpSpeed=25f;
+    [SerializeField]   private float boosterJump = 5f;
     Rigidbody2D rbPlayer;
     CapsuleCollider2D feetCollider;
     [SerializeField]

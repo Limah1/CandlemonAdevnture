@@ -24,7 +24,7 @@ public partial class @CandlemonAdventures : IInputActionCollection2, IDisposable
     ""name"": ""Candlemon Adventures"",
     ""maps"": [
         {
-            ""name"": ""Player"",
+            ""name"": ""Keyboard"",
             ""id"": ""75fd7ec1-febe-44f6-9750-832756c233e7"",
             ""actions"": [
                 {
@@ -454,39 +454,6 @@ public partial class @CandlemonAdventures : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""One Modifier"",
-                    ""id"": ""bb41ce8d-c174-44a4-9242-1f7d75e435de"",
-                    ""path"": ""OneModifier"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""JumpFire"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""modifier"",
-                    ""id"": ""c1d6aa15-5bd5-48ec-a8fa-bc612c960734"",
-                    ""path"": ""<DualShockGamepad>/dpad/down"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""JumpFire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""binding"",
-                    ""id"": ""7f9eca17-a670-4e57-996a-0b8aebd682a3"",
-                    ""path"": ""<DualShockGamepad>/buttonWest"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""JumpFire"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
                     ""name"": """",
                     ""id"": ""a3373ad0-7c93-488c-b320-8d558d625f9f"",
                     ""path"": ""<DualShockGamepad>/leftShoulder"",
@@ -500,6 +467,526 @@ public partial class @CandlemonAdventures : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""73654583-757c-48da-931c-177dd088f460"",
+                    ""path"": ""<Keyboard>/c"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""ce4657bc-1205-45a1-840d-2524b91f3643"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFire"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""74685c52-685b-46e5-9b12-0432e4ad4c76"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""999ec1b7-63aa-40f8-b7b2-42e9f09d2e14"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                }
+            ]
+        },
+        {
+            ""name"": ""Controller"",
+            ""id"": ""ac00af55-c079-4375-b645-eef98435d224"",
+            ""actions"": [
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Value"",
+                    ""id"": ""567f4396-559f-4eb7-a3ed-cf6c774a73a0"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Value"",
+                    ""id"": ""ae3434e3-90ba-43c8-863e-20e6be3d8cfb"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Fire"",
+                    ""type"": ""Button"",
+                    ""id"": ""c944df9a-c026-4337-bedb-bc75806931b3"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""83533d20-9882-43aa-9c88-90f3f2b3bdfa"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shinka"",
+                    ""type"": ""Button"",
+                    ""id"": ""80b8f2d4-a534-4017-82c0-2ec84581dd89"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""PickUp"",
+                    ""type"": ""Button"",
+                    ""id"": ""def37f68-28bf-403c-905a-1cf49dcb762d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""JumpFire"",
+                    ""type"": ""Button"",
+                    ""id"": ""1cbecd58-303f-4eef-bc8f-d0ea0ab444a2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""Button"",
+                    ""id"": ""ef3e9f10-45ff-46b2-9af6-22ac4e9402b1"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""eb685d8e-c101-4d37-9444-18b1fd77b4f2"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""9c4cd22d-5f99-4f95-802a-b412759440d2"",
+                    ""path"": ""Dpad"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""ae53cf35-6676-4a27-99ca-7190975c2fdb"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""b5932c2a-9694-440f-9708-375244609a40"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""b65dc8fe-d13c-48db-87e2-2cb790c547b2"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e6bf78df-c5e4-428d-ad1c-5f2e3d395d68"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""56e2796f-9544-4f75-9926-a3135b77174a"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""428ee691-34fc-4451-825e-0d3ef20a6702"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""2347f900-2cfa-47cb-b2d6-4de4b25fdb00"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""19743eda-6d86-4ce4-bfe5-b5794d046f17"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""375d5951-1466-459b-97cd-096c5d2379f7"",
+                    ""path"": ""<XRController>/{Primary2DAxis}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""XR"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7b17e02-d5d2-4493-90b8-baac4b4995d3"",
+                    ""path"": ""<Joystick>/stick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""cbbcda35-c298-4b16-99cc-2ef3125e5d21"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""f571602c-31a9-4df6-93f3-1f5323432b56"",
+                    ""path"": ""<Gamepad>/dpad/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""7a9d0b4b-41b9-4a86-bf6d-fa5cc3370398"",
+                    ""path"": ""<Gamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""2a2d1850-bef1-468d-9329-087593afaab0"",
+                    ""path"": ""<Gamepad>/dpad/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""09abebf5-7a28-4bd9-94e7-3e2ac5128a9c"",
+                    ""path"": ""<Gamepad>/dpad/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d9d48416-c419-490f-bb64-cb2c1f8fb1d4"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b85ca214-047b-4aaf-b94d-da9eb9e9a421"",
+                    ""path"": ""<Pointer>/delta"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse;Touch"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c4fea74b-85d2-4b8a-9a43-d87318f70300"",
+                    ""path"": ""<Joystick>/{Hatswitch}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2f75466a-80e0-4801-b6e6-e329d9a9268c"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Gamepad"",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bd5ef910-c9fb-4b93-9ea9-ad444458f328"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard&Mouse"",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8281be41-cd68-40dd-889a-bb1431897c25"",
+                    ""path"": ""<Touchscreen>/primaryTouch/tap"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Touch"",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd9b710c-2b2b-45eb-b5f3-32b0152b5d6d"",
+                    ""path"": ""<Joystick>/trigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Joystick"",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""06334974-905d-4f8a-a335-85a529c9e644"",
+                    ""path"": ""<XRController>/{PrimaryAction}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""XR"",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a34c7e39-6eb5-4437-b5e5-7cbed86b4bf7"",
+                    ""path"": ""<Keyboard>/x"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6ffa8b96-de79-47e1-8157-88bae10a1ee2"",
+                    ""path"": ""<DualShockGamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5d5e3e66-5f56-48aa-aec7-94464cf11272"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0e778ee3-a41d-4bc3-9e5f-18b71e82b32a"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b3b8d752-1381-4f07-a00d-79721ed7e203"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shinka"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""db90b668-b974-402f-bea1-56b09d1e3263"",
+                    ""path"": ""<DualShockGamepad>/rightShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Shinka"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1cd0d024-bc08-4435-a86b-edc90a80a5e4"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PickUp"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""One Modifier"",
+                    ""id"": ""fcbb3bb3-74d0-427e-a531-3ae1c7d4929f"",
+                    ""path"": ""OneModifier"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""JumpFire"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""modifier"",
+                    ""id"": ""6da40f16-9fe9-4f8e-8733-3e3f59c40909"",
+                    ""path"": ""<DualShockGamepad>/dpad/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""JumpFire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""binding"",
+                    ""id"": ""6ac123ef-457a-41dd-bf75-c48c0dfae2bd"",
+                    ""path"": ""<DualShockGamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""JumpFire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1ecb423b-baa7-4d3e-95e3-1587ad620ea5"",
+                    ""path"": ""<DualShockGamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c574249d-c890-4c6d-b0d1-46973936c372"",
                     ""path"": ""<Keyboard>/c"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -1090,16 +1577,26 @@ public partial class @CandlemonAdventures : IInputActionCollection2, IDisposable
         }
     ]
 }");
-        // Player
-        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
-        m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
-        m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
-        m_Player_Shinka = m_Player.FindAction("Shinka", throwIfNotFound: true);
-        m_Player_PickUp = m_Player.FindAction("PickUp", throwIfNotFound: true);
-        m_Player_JumpFire = m_Player.FindAction("JumpFire", throwIfNotFound: true);
-        m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
+        // Keyboard
+        m_Keyboard = asset.FindActionMap("Keyboard", throwIfNotFound: true);
+        m_Keyboard_Move = m_Keyboard.FindAction("Move", throwIfNotFound: true);
+        m_Keyboard_Look = m_Keyboard.FindAction("Look", throwIfNotFound: true);
+        m_Keyboard_Fire = m_Keyboard.FindAction("Fire", throwIfNotFound: true);
+        m_Keyboard_Jump = m_Keyboard.FindAction("Jump", throwIfNotFound: true);
+        m_Keyboard_Shinka = m_Keyboard.FindAction("Shinka", throwIfNotFound: true);
+        m_Keyboard_PickUp = m_Keyboard.FindAction("PickUp", throwIfNotFound: true);
+        m_Keyboard_JumpFire = m_Keyboard.FindAction("JumpFire", throwIfNotFound: true);
+        m_Keyboard_Dash = m_Keyboard.FindAction("Dash", throwIfNotFound: true);
+        // Controller
+        m_Controller = asset.FindActionMap("Controller", throwIfNotFound: true);
+        m_Controller_Move = m_Controller.FindAction("Move", throwIfNotFound: true);
+        m_Controller_Look = m_Controller.FindAction("Look", throwIfNotFound: true);
+        m_Controller_Fire = m_Controller.FindAction("Fire", throwIfNotFound: true);
+        m_Controller_Jump = m_Controller.FindAction("Jump", throwIfNotFound: true);
+        m_Controller_Shinka = m_Controller.FindAction("Shinka", throwIfNotFound: true);
+        m_Controller_PickUp = m_Controller.FindAction("PickUp", throwIfNotFound: true);
+        m_Controller_JumpFire = m_Controller.FindAction("JumpFire", throwIfNotFound: true);
+        m_Controller_Dash = m_Controller.FindAction("Dash", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1168,64 +1665,64 @@ public partial class @CandlemonAdventures : IInputActionCollection2, IDisposable
         return asset.FindBinding(bindingMask, out action);
     }
 
-    // Player
-    private readonly InputActionMap m_Player;
-    private IPlayerActions m_PlayerActionsCallbackInterface;
-    private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Look;
-    private readonly InputAction m_Player_Fire;
-    private readonly InputAction m_Player_Jump;
-    private readonly InputAction m_Player_Shinka;
-    private readonly InputAction m_Player_PickUp;
-    private readonly InputAction m_Player_JumpFire;
-    private readonly InputAction m_Player_Dash;
-    public struct PlayerActions
+    // Keyboard
+    private readonly InputActionMap m_Keyboard;
+    private IKeyboardActions m_KeyboardActionsCallbackInterface;
+    private readonly InputAction m_Keyboard_Move;
+    private readonly InputAction m_Keyboard_Look;
+    private readonly InputAction m_Keyboard_Fire;
+    private readonly InputAction m_Keyboard_Jump;
+    private readonly InputAction m_Keyboard_Shinka;
+    private readonly InputAction m_Keyboard_PickUp;
+    private readonly InputAction m_Keyboard_JumpFire;
+    private readonly InputAction m_Keyboard_Dash;
+    public struct KeyboardActions
     {
         private @CandlemonAdventures m_Wrapper;
-        public PlayerActions(@CandlemonAdventures wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputAction @Look => m_Wrapper.m_Player_Look;
-        public InputAction @Fire => m_Wrapper.m_Player_Fire;
-        public InputAction @Jump => m_Wrapper.m_Player_Jump;
-        public InputAction @Shinka => m_Wrapper.m_Player_Shinka;
-        public InputAction @PickUp => m_Wrapper.m_Player_PickUp;
-        public InputAction @JumpFire => m_Wrapper.m_Player_JumpFire;
-        public InputAction @Dash => m_Wrapper.m_Player_Dash;
-        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public KeyboardActions(@CandlemonAdventures wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_Keyboard_Move;
+        public InputAction @Look => m_Wrapper.m_Keyboard_Look;
+        public InputAction @Fire => m_Wrapper.m_Keyboard_Fire;
+        public InputAction @Jump => m_Wrapper.m_Keyboard_Jump;
+        public InputAction @Shinka => m_Wrapper.m_Keyboard_Shinka;
+        public InputAction @PickUp => m_Wrapper.m_Keyboard_PickUp;
+        public InputAction @JumpFire => m_Wrapper.m_Keyboard_JumpFire;
+        public InputAction @Dash => m_Wrapper.m_Keyboard_Dash;
+        public InputActionMap Get() { return m_Wrapper.m_Keyboard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
-        public void SetCallbacks(IPlayerActions instance)
+        public static implicit operator InputActionMap(KeyboardActions set) { return set.Get(); }
+        public void SetCallbacks(IKeyboardActions instance)
         {
-            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
+            if (m_Wrapper.m_KeyboardActionsCallbackInterface != null)
             {
-                @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                @Fire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Fire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnFire;
-                @Jump.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Jump.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJump;
-                @Shinka.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShinka;
-                @Shinka.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShinka;
-                @Shinka.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShinka;
-                @PickUp.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPickUp;
-                @PickUp.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPickUp;
-                @PickUp.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPickUp;
-                @JumpFire.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpFire;
-                @JumpFire.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpFire;
-                @JumpFire.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnJumpFire;
-                @Dash.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
-                @Dash.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
-                @Dash.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnDash;
+                @Move.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnMove;
+                @Look.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnLook;
+                @Fire.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnFire;
+                @Fire.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnFire;
+                @Fire.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnFire;
+                @Jump.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnJump;
+                @Shinka.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnShinka;
+                @Shinka.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnShinka;
+                @Shinka.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnShinka;
+                @PickUp.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnPickUp;
+                @PickUp.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnPickUp;
+                @PickUp.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnPickUp;
+                @JumpFire.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnJumpFire;
+                @JumpFire.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnJumpFire;
+                @JumpFire.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnJumpFire;
+                @Dash.started -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_KeyboardActionsCallbackInterface.OnDash;
             }
-            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
+            m_Wrapper.m_KeyboardActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Move.started += instance.OnMove;
@@ -1255,7 +1752,96 @@ public partial class @CandlemonAdventures : IInputActionCollection2, IDisposable
             }
         }
     }
-    public PlayerActions @Player => new PlayerActions(this);
+    public KeyboardActions @Keyboard => new KeyboardActions(this);
+
+    // Controller
+    private readonly InputActionMap m_Controller;
+    private IControllerActions m_ControllerActionsCallbackInterface;
+    private readonly InputAction m_Controller_Move;
+    private readonly InputAction m_Controller_Look;
+    private readonly InputAction m_Controller_Fire;
+    private readonly InputAction m_Controller_Jump;
+    private readonly InputAction m_Controller_Shinka;
+    private readonly InputAction m_Controller_PickUp;
+    private readonly InputAction m_Controller_JumpFire;
+    private readonly InputAction m_Controller_Dash;
+    public struct ControllerActions
+    {
+        private @CandlemonAdventures m_Wrapper;
+        public ControllerActions(@CandlemonAdventures wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Move => m_Wrapper.m_Controller_Move;
+        public InputAction @Look => m_Wrapper.m_Controller_Look;
+        public InputAction @Fire => m_Wrapper.m_Controller_Fire;
+        public InputAction @Jump => m_Wrapper.m_Controller_Jump;
+        public InputAction @Shinka => m_Wrapper.m_Controller_Shinka;
+        public InputAction @PickUp => m_Wrapper.m_Controller_PickUp;
+        public InputAction @JumpFire => m_Wrapper.m_Controller_JumpFire;
+        public InputAction @Dash => m_Wrapper.m_Controller_Dash;
+        public InputActionMap Get() { return m_Wrapper.m_Controller; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ControllerActions set) { return set.Get(); }
+        public void SetCallbacks(IControllerActions instance)
+        {
+            if (m_Wrapper.m_ControllerActionsCallbackInterface != null)
+            {
+                @Move.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnMove;
+                @Look.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnLook;
+                @Fire.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnFire;
+                @Fire.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnFire;
+                @Fire.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnFire;
+                @Jump.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnJump;
+                @Shinka.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnShinka;
+                @Shinka.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnShinka;
+                @Shinka.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnShinka;
+                @PickUp.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnPickUp;
+                @PickUp.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnPickUp;
+                @PickUp.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnPickUp;
+                @JumpFire.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnJumpFire;
+                @JumpFire.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnJumpFire;
+                @JumpFire.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnJumpFire;
+                @Dash.started -= m_Wrapper.m_ControllerActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_ControllerActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_ControllerActionsCallbackInterface.OnDash;
+            }
+            m_Wrapper.m_ControllerActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
+                @Fire.started += instance.OnFire;
+                @Fire.performed += instance.OnFire;
+                @Fire.canceled += instance.OnFire;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Shinka.started += instance.OnShinka;
+                @Shinka.performed += instance.OnShinka;
+                @Shinka.canceled += instance.OnShinka;
+                @PickUp.started += instance.OnPickUp;
+                @PickUp.performed += instance.OnPickUp;
+                @PickUp.canceled += instance.OnPickUp;
+                @JumpFire.started += instance.OnJumpFire;
+                @JumpFire.performed += instance.OnJumpFire;
+                @JumpFire.canceled += instance.OnJumpFire;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
+            }
+        }
+    }
+    public ControllerActions @Controller => new ControllerActions(this);
 
     // UI
     private readonly InputActionMap m_UI;
@@ -1406,7 +1992,18 @@ public partial class @CandlemonAdventures : IInputActionCollection2, IDisposable
             return asset.controlSchemes[m_XRSchemeIndex];
         }
     }
-    public interface IPlayerActions
+    public interface IKeyboardActions
+    {
+        void OnMove(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
+        void OnFire(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnShinka(InputAction.CallbackContext context);
+        void OnPickUp(InputAction.CallbackContext context);
+        void OnJumpFire(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
+    }
+    public interface IControllerActions
     {
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);

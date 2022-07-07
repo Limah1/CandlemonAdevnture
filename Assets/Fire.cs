@@ -33,9 +33,13 @@ void FlipSprite(){
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other) {
+    private void OnTriggerEnter2D(Collider2D collider){
+        IDamageable damageable = GetComponent<IDamageable>();
+        if(damageable!=null){
+            damageable.Damage();
+        }
         Destroy(gameObject);
     }
-
-
+   
+    
 }

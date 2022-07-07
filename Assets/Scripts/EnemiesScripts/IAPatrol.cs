@@ -35,6 +35,7 @@ public class IAPatrol : MonoBehaviour
     for(int i =0;i <=bubbleArray.Length;i++){
         bubbleArray[i] = bubbleGameObject;
     }
+    bubbleClass = FindObjectOfType<BubbleScript>();
   }
     void Patrol(){
         transform.Translate(Vector2.left*speed*Time.deltaTime);
