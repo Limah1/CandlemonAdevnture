@@ -9,13 +9,13 @@ public class DataManager : MonoBehaviour
     public void addData(){
         data++;
     }
-
-    private void Update() {
-
-    }
-
     void OnShinka(){
        if(data==2) 
         {Debug.Log("EVOLUI!");}
     }
+
+    public int GetData(){
+        return data;
+    }
+
 }

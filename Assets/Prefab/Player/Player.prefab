@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 220557124903242706}
   - component: {fileID: 8923872182845595156}
   - component: {fileID: 1595922686}
+  - component: {fileID: 220557125212207374}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -225,8 +226,8 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
+  m_DefaultControlScheme: Keyboard&Mouse
+  m_DefaultActionMap: Keyboard
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &1749988459
@@ -241,7 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87eb4c72127e85149b8ee2bed2891f2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boosterJump: 30
+  jumpSpeed: 25
+  boosterJump: 15
   actionModifier: {fileID: 5838145686395644059, guid: 1963f3d3d5feba6478daed9e151c83f4, type: 3}
 --- !u!114 &1749988468
 MonoBehaviour:
@@ -317,8 +319,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.038301226, y: -1.0590419}
-  m_Size: {x: 2.1008484, y: 0.4267345}
+  m_Offset: {x: 0.038301207, y: -1.2266526}
+  m_Size: {x: 2.1008487, y: 0.76195633}
   m_Direction: 1
 --- !u!114 &1595922686
 MonoBehaviour:
@@ -333,6 +335,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: 0
+--- !u!114 &220557125212207374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220557124903242710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1f037b1963eece4fb649e60804d666a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &714123156709024576
 GameObject:
   m_ObjectHideFlags: 0

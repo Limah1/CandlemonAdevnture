@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class PlayerBody : MonoBehaviour, ITakeDamage
 {
-    private int health = 5;
-    PolygonCollider2D bodyCollider;
-
+    public int health = 5;
     public void TakeDamage(int damage){
         health -= damage;
         Die();
@@ -17,11 +15,13 @@ public class PlayerBody : MonoBehaviour, ITakeDamage
             Destroy(gameObject);
         }
     }
-    private void Awake() {
-        bodyCollider = GetComponent<PolygonCollider2D>();
-    }
     private void OnTriggerEnter2D(Collider2D other) {
-        //TakeDamage(1);
+       if(other.IsTouchingLayers(LayerMask.GetMask("Consumable"))){
+        return;
+       } 
+        TakeDamage(1);
     }
-
+    public int GetHealth(){
+        return health;
+    }
 }
